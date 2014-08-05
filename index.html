@@ -4,7 +4,7 @@
   <title>D3 Basics</title>
   <link rel="stylesheet" href="style.css">
   <script src="http://d3js.org/d3.v3.min.js"></script>
-  <script src="demo.js" type="text/javascript" defer></script>
+  <script src="svg-salaries.js" type="text/javascript" defer></script>
   <!-- "defer" tells the browser not to run the script until it's done parsing
   the document. Normally we'd use $(document).ready to get around this instead,
   but we otherwise have no reason to include jQuery for this demo. -->
@@ -13,9 +13,15 @@
   <h1>D3 Basics</h1>
 
   <ul id="simple-list">
+
   </ul>
 
   <div id="html-chart">
+  </div>
+
+  <div>
+    <select id="dept-selector">
+    </select>
   </div>
 
   <svg id="svg-chart" width="800" height="400">
