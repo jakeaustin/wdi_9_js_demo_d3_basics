@@ -83,8 +83,13 @@ function buildGraph() {
         .attr("transform", "rotate(-90)" );
 
     containerGroup.append("g")
-      .attr("class", "y axis")
-      .call(yAxis);
+        .attr("class", "y axis")
+        .call(yAxis)
+      .append("text")
+        .attr("x", -75)
+        .attr("y", height/2)
+        .style("text-anchor", "middle")
+        .text("Salary in $");
 
     var bars = containerGroup
       .selectAll(".bar")
@@ -97,5 +102,6 @@ function buildGraph() {
       .attr("height", function(d) { return height - yScale(d.regular); })
       .attr("width", xScale.rangeBand());
     bars.exit().remove();
+    //fill table of values sorted
   });
 }

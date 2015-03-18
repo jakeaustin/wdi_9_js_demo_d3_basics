@@ -11,6 +11,11 @@
 
 /* Styles for advanced SVG chart */
 
+body {
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
 .bar {
   fill: steelblue;
 }
@@ -23,5 +28,6 @@
 .axis line {
   fill: none;
   stroke: black;
+  stroke-width: 3;
   shape-rendering: crispEdges;
 }
