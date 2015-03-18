@@ -70,6 +70,7 @@ function buildGraph() {
     xScale.domain(in_dept.map(function(d) { return d.title; }));
     yScale.domain([d3.max(salaries), 0]);
     d3.selectAll('.axis').remove();
+    d3.selectAll('.bar').remove();
 
     containerGroup.append("g")
         .attr("class", "x axis")
